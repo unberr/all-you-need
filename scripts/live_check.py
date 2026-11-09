@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Run two short headless Claude sessions to verify the harness loads and guards fire."""
 from __future__ import annotations
 
 import argparse
