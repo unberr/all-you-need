@@ -1,3 +1,4 @@
+![all-you-need logo](logo.png)
 # all-you-need
 
 ![tests](https://img.shields.io/badge/tests-240%20passing-brightgreen) ![scan](https://img.shields.io/badge/security%20scan-100%2F100-brightgreen) ![deps](https://img.shields.io/badge/deps-stdlib%20only-blue) ![license](https://img.shields.io/badge/license-MIT-blue)
