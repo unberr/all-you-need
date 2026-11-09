@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""Detect the project stack (languages, tools, companions) from files in a directory."""
 from __future__ import annotations
 
 import argparse
