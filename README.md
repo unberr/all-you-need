@@ -6,7 +6,7 @@
 Stop losing work to unverified edits. This lean Claude Code harness forces every change to prove itself — tests, evidence, no silent failures — and gets out of your way when you move fast.
 
 ```bash
-git clone <your-fork> && cd all-you-need && ./install.sh --yes
+git clone https://github.com/unberr/all-you-need.git && cd all-you-need && ./install.sh --yes
 # next session: /verify — build, type, lint, tests, scan, diff in one PASS/FAIL report
 ```
 
@@ -185,7 +185,7 @@ Native PowerShell and cmd cannot run `.sh` files: use Git Bash, or WSL (which co
 Or install the base plugin by hand inside Claude Code:
 
 ```
-/plugin marketplace add <your-github-user>/all-you-need
+/plugin marketplace add unberr/all-you-need
 /plugin install all-you-need@all-you-need
 ```
 
