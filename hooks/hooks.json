@@ -1,0 +1,72 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'if command -v python3 >/dev/null 2>&1; then exec python3 -I \"$0\"; else exec python -I \"$0\"; fi' \"${CLAUDE_PLUGIN_ROOT}/hooks/session_start.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Read|Bash|Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'if command -v python3 >/dev/null 2>&1; then exec python3 -I \"$0\"; else exec python -I \"$0\"; fi' \"${CLAUDE_PLUGIN_ROOT}/hooks/pre_tool.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'if command -v python3 >/dev/null 2>&1; then exec python3 -I \"$0\"; else exec python -I \"$0\"; fi' \"${CLAUDE_PLUGIN_ROOT}/hooks/post_edit.py\"",
+            "timeout": 45
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'if command -v python3 >/dev/null 2>&1; then exec python3 -I \"$0\"; else exec python -I \"$0\"; fi' \"${CLAUDE_PLUGIN_ROOT}/hooks/pre_compact.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'if command -v python3 >/dev/null 2>&1; then exec python3 -I \"$0\"; else exec python -I \"$0\"; fi' \"${CLAUDE_PLUGIN_ROOT}/hooks/stop_gate.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh -c 'if command -v python3 >/dev/null 2>&1; then exec python3 -I \"$0\"; else exec python -I \"$0\"; fi' \"${CLAUDE_PLUGIN_ROOT}/hooks/research_router.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

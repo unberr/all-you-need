@@ -1,0 +1,17 @@
+# Frontend security
+
+Assume everything that reaches the browser can be read, changed and replayed: source, bundles, API URLs, client logic, local storage, and the requests the page makes.
+
+- **No secrets in client code.** Private API keys, signing keys, database credentials, service tokens and anything marked server-side never go into the bundle, the HTML, source maps, public environment variables (`NEXT_PUBLIC_*`, `VITE_*`, `REACT_APP_*` are public by design) or the repository the frontend ships from. A public client key (a publishable key, a maps key) is restricted by origin and quota. Calls that need a secret go through your backend.
+- **Client-side checks are usability, not security.** Hidden buttons, route guards and disabled fields do not protect anything. The backend enforces authentication and authorization on every request, and the frontend never contradicts it.
+- **XSS:** use the framework's escaping (React, Vue, Angular, Svelte escape by default). Avoid `dangerouslySetInnerHTML`, `v-html`, `[innerHTML]`, `innerHTML`, `document.write`, `eval` and `new Function`. If raw HTML is required, sanitize with DOMPurify first. Do not build `href` or `src` from untrusted input without scheme validation (`javascript:` URLs).
+- **Content Security Policy:** a strict policy (nonce or hash based `script-src`, no `unsafe-inline`/`unsafe-eval` where possible, `object-src 'none'`, `base-uri 'none'`, `frame-ancestors`). Deliver it as a response header. Use Trusted Types where supported.
+- **Tokens:** prefer an `HttpOnly`, `Secure`, `SameSite` cookie set by the server for sessions. Do not keep long-lived tokens or credentials in `localStorage` or `sessionStorage` (any script can read them; XSS steals them). If a token must live in memory, keep it short-lived with refresh rotation. Never store passwords, card data or personal data there casually.
+- **URLs and redirects:** validate redirect targets (relative or allowlisted), validate URL schemes from user input, do not put tokens or personal data in query strings (they land in history, logs and `Referer`).
+- **External links:** `target="_blank"` gets `rel="noopener noreferrer"`. Do not trust `window.opener`.
+- **`postMessage`:** always pass an explicit target origin when sending, and when receiving check `event.origin` against an allowlist and validate `event.data` before use. Never use `"*"` for sensitive data.
+- **Clickjacking:** `frame-ancestors 'self'` in CSP (and `X-Frame-Options: DENY` for old browsers) unless embedding is a requirement.
+- **Third-party scripts and embeds:** the fewest possible; each one runs with your page's privileges. Self-host or pin with Subresource Integrity (`integrity` + `crossorigin`), sandbox iframes (`sandbox`, `allow` minimal), and load analytics and tag managers only with consent where required.
+- **Dependencies:** audit with `npm audit`/OSV, keep a lockfile, avoid unmaintained or tiny packages for trivial work, review install scripts, and never add a package whose name you cannot verify in the registry (see `supply-chain.md`).
+- **Storage and caching:** do not cache sensitive responses in shared caches (`Cache-Control: no-store`), clear client state on logout, and never trust data from `localStorage` or cookies on the server.
+- **Forms:** validate in the UI for usability and again on the server. Use `autocomplete` attributes correctly, `type="password"` for passwords, and no sensitive data in GET forms.

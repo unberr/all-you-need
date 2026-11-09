@@ -1,0 +1,234 @@
+{
+  "api-and-interface-design": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/api-and-interface-design"
+  },
+  "browser-testing-with-devtools": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/browser-testing-with-devtools"
+  },
+  "c-programming-best-practices": {
+    "repo": "https://github.com/LoopyLuci/Skills.git",
+    "path": "skills/c-programming-best-practices"
+  },
+  "ci-cd-and-automation": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/ci-cd-and-automation"
+  },
+  "code-review-and-quality": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/code-review-and-quality"
+  },
+  "code-simplification": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/code-simplification"
+  },
+  "constraint-driven-development": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/constraint-driven-development"
+  },
+  "context-engineering": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/context-engineering"
+  },
+  "debugging-and-error-recovery": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/debugging-and-error-recovery"
+  },
+  "deprecation-and-migration": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/deprecation-and-migration"
+  },
+  "design-taste-frontend": {
+    "repo": "https://github.com/Leonxlnx/taste-skill.git",
+    "path": "skills/taste-skill"
+  },
+  "documentation-and-adrs": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/documentation-and-adrs"
+  },
+  "doubt-driven-development": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/doubt-driven-development"
+  },
+  "expo-ui": {
+    "repo": "https://github.com/expo/skills.git",
+    "path": "plugins/expo/skills/expo-ui"
+  },
+  "frontend-ui-engineering": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/frontend-ui-engineering"
+  },
+  "git-workflow-and-versioning": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/git-workflow-and-versioning"
+  },
+  "gsap-core": {
+    "repo": "https://github.com/greensock/gsap-skills.git",
+    "path": "skills/gsap-core"
+  },
+  "gsap-react": {
+    "repo": "https://github.com/greensock/gsap-skills.git",
+    "path": "skills/gsap-react"
+  },
+  "gsap-scrolltrigger": {
+    "repo": "https://github.com/greensock/gsap-skills.git",
+    "path": "skills/gsap-scrolltrigger"
+  },
+  "gsap-timeline": {
+    "repo": "https://github.com/greensock/gsap-skills.git",
+    "path": "skills/gsap-timeline"
+  },
+  "hyperframes": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/hyperframes"
+  },
+  "hyperframes-animation": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/hyperframes-animation"
+  },
+  "hyperframes-audio": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/hyperframes-audio"
+  },
+  "hyperframes-cli": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/hyperframes-cli"
+  },
+  "hyperframes-core": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/hyperframes-core"
+  },
+  "hyperframes-creative": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/hyperframes-creative"
+  },
+  "hyperframes-keyframes": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/hyperframes-keyframes"
+  },
+  "hyperframes-registry": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/hyperframes-registry"
+  },
+  "idea-refine": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/idea-refine"
+  },
+  "impeccable": {
+    "repo": "https://github.com/pbakaus/impeccable.git",
+    "path": ".agents/skills/impeccable"
+  },
+  "incremental-implementation": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/incremental-implementation"
+  },
+  "interview-me": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/interview-me"
+  },
+  "material-3": {
+    "repo": "https://github.com/hamen/material-3-skill.git",
+    "path": "skills/material-3"
+  },
+  "media-use": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/media-use"
+  },
+  "mobile-app-ui-design": {
+    "repo": "https://github.com/ceorkm/mobile-app-ui-design.git",
+    "path": "."
+  },
+  "motion-dev-animations": {
+    "repo": "https://github.com/199-biotechnologies/motion-dev-animations-skill.git",
+    "path": "."
+  },
+  "motion-graphics": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/motion-graphics"
+  },
+  "observability-and-instrumentation": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/observability-and-instrumentation"
+  },
+  "performance-optimization": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/performance-optimization"
+  },
+  "planning-and-task-breakdown": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/planning-and-task-breakdown"
+  },
+  "playwright-cli": {
+    "repo": "https://github.com/microsoft/playwright-cli.git",
+    "path": "skills/playwright-cli"
+  },
+  "premium-frontend-ui": {
+    "repo": "https://github.com/github/awesome-copilot.git",
+    "path": "skills/premium-frontend-ui"
+  },
+  "product-launch-video": {
+    "repo": "https://github.com/heygen-com/hyperframes.git",
+    "path": "skills/product-launch-video"
+  },
+  "remotion-best-practices": {
+    "repo": "https://github.com/remotion-dev/skills.git",
+    "path": "skills/remotion-best-practices"
+  },
+  "rust-skills": {
+    "repo": "https://github.com/leonardomso/rust-skills.git",
+    "path": "."
+  },
+  "security-and-hardening": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/security-and-hardening"
+  },
+  "security-audit": {
+    "repo": "https://github.com/cloudflare/security-audit-skill.git",
+    "path": "skills/security-audit"
+  },
+  "shadcn": {
+    "repo": "https://github.com/shadcn-ui/ui.git",
+    "path": "skills/shadcn"
+  },
+  "shipping-and-launch": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/shipping-and-launch"
+  },
+  "source-driven-development": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/source-driven-development"
+  },
+  "spec-driven-development": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/spec-driven-development"
+  },
+  "swiftui-skills": {
+    "repo": "https://github.com/ameyalambat128/swiftui-skills.git",
+    "path": "skills/swiftui-skills"
+  },
+  "test-driven-development": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/test-driven-development"
+  },
+  "ui-ux-pro-max": {
+    "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+    "path": ".claude/skills/ui-ux-pro-max"
+  },
+  "using-agent-skills": {
+    "repo": "https://github.com/addyosmani/agent-skills.git",
+    "path": "skills/using-agent-skills"
+  },
+  "vercel-composition-patterns": {
+    "repo": "https://github.com/vercel-labs/agent-skills.git",
+    "path": "skills/composition-patterns"
+  },
+  "vercel-react-best-practices": {
+    "repo": "https://github.com/vercel-labs/agent-skills.git",
+    "path": "skills/react-best-practices"
+  },
+  "web-design-guidelines": {
+    "repo": "https://github.com/vercel-labs/agent-skills.git",
+    "path": "skills/web-design-guidelines"
+  }
+}

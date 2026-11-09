@@ -1,0 +1,5 @@
+{
+  "extraPaths": ["hooks", "scripts"],
+  "pythonVersion": "3.9",
+  "typeCheckingMode": "basic"
+}
